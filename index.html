@@ -15,7 +15,7 @@
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/garden.js"></script>
 <script type="text/javascript" src="js/functions.js"></script>
-
+<link rel="shortcut icon" href="images/love.png" >
 </head>
 
 <body>
@@ -35,8 +35,8 @@
 			   xiaogenban.love(feifei);<br />
 			   feifei.love(xiaogenban);<br />
 				}<br />
-			catch{<br />
-			   throw new LoveTimeoutException();<br />
+			catch(Exception e){<br />
+			   throw new LoveTimeoutException(e);<br />
 			}<br />
 			finally{<br />
 			   xiaogenban.loveForever(feifei);<br />
@@ -51,7 +51,7 @@
 			<span class="comments">///in the future</span><br />
 			xiaogenban.Go("Shanghai");<br />
 			feifei.happy=true;<br />
-			<span class="comments">//未完待续。。。（这个英文怎么说？囧！）</span><br />
+			<span class="comments">//to be continued!</span><br />
 			I want to say:<br />
 			Baby, Today is your birthday.<br /> 
 			Happy Birthday!<br />
@@ -70,11 +70,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	<div id="copyright">
-		<a href="#">....</a><br />
-		<a href="#">....</a><br />
-		
 	</div>
 </div>
 
